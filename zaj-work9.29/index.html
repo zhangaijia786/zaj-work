@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			#div1{
+				width:300px;
+				height:300px;
+				background:#AAAAAA;
+				margin:0 auto;
+			}
+			span{
+				display:none;
+				color:red;
+			}
+			#b1{
+				margin-top:5px;
+				margin-left:20px;
+			}
+			b{
+			   width:100px;
+			   height:40px;
+			   font-size:30px;
+			   margin-left:20px;
+			   margin-top:10px;
+			}
+			input{
+				width:250px;
+				height:50px;
+				margin-left:20px;
+				margin-top:10px;
+			}
+			button{
+				width:50px;
+				height:50px;
+				border:0;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="div1">
+			<b>用户名:</b><br>
+            <input type="text" id="in1" value="" placeholder="请输入您的用户名"><span id="span">该用户名无法注册</span><br>
+            <b>密码:</b><br>
+            <input type="text" id="in2" placeholder="请输入您的密码"><br>
+           <button id="b1">注册</button><br>
+    </div>
+    <script>
+        var in1=document.getElementById('in1');
+        var in2=document.getElementById('in2');
+        var b1=document.getElementById('b1');
+        var name=['tom','jack','lili'];
+        in1.onblur=function(){
+             if(name.indexOf(in1.value) !=-1){
+        	    span.style.display="inline-block";
+              }else{
+        	      span.style.display="none";
+              }
+        }
+        b1.onclick=function(){
+        	if(in1.value&&in2.value==""){
+        		alert('请输入正确的用户名或密码');
+        	}else if(name.indexOf(in1.value) !=-1){
+        		alert('请重新输入用户名');
+        	}else{
+        		alert('注册成功！')
+        	}
+        }
+    </script>
+    </body>
+</html>
