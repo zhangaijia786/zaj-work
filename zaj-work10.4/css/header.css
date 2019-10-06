@@ -1,0 +1,144 @@
+*{
+	margin:0;
+	padding:0;
+}
+/*这是头部*/
+#header-top{
+	width:100%;
+	height:85px;
+}
+#fixed{
+	width:1274px;
+	height:85px;
+	padding:25px 15px;
+	margin:0 auto;
+}
+#header-top #logo{
+	float:left;
+}
+#header-top #sify{
+	float:left;
+}
+#header-top #sify ul li{
+	list-style: none;
+	float:left;
+}
+#header-top #sify ul li a{
+	text-decoration: none;
+}
+#header-top #input{
+	float:left;
+}
+#fixed #logo{
+    width:229px;	
+    align-content: center;
+}
+#fixed #sify{
+	width:815px;
+	padding:5px 0;
+}
+#fixed #sify ul {
+	display:flex;
+	justify-content: center;
+}
+#fixed #input{
+	width:229px;
+}
+#fixed #sify ul #li1{
+	width:83px;
+	text-align: left;
+}
+#fixed #sify ul #li2{
+	width:116px;
+	text-align: center;
+}
+#fixed #sify ul #li3{
+	width:150px;
+	text-align: right;
+}
+#fixed #sify ul li a{
+	color:#373737;
+	font-size:16px;
+	font-weight:600;
+}
+#fixed #input{
+	width:230px;
+}
+#fixed #input #img1{
+	width:30px;
+	height:31px;
+	margin-right: 50px;
+}
+#fixed #input #img2{
+	width:25px;
+	height:25px;
+}
+#fixed #input a{
+	text-decoration: none;
+}
+#fixed #input a:hover{
+	color:red;
+}
+#fixed #input #span{
+	margin-left:12px;
+	position: relative;
+    bottom:11px;
+}
+#fixed #input span{
+	display: inline-block;
+	width:25px;
+	height:25px;
+	line-height:23px;
+	text-align:center;
+	border-radius: 50%;
+	font-size:12px;
+	font-weight:400;
+	border:1px solid #e5e5e5;
+	color:#373737;
+}
+#fixed #input{
+	text-align: right;
+}
+#header-bottom{
+	width:100%;
+	height:244px;
+	background-color: #4C4C4C;
+}
+#header-bottom #container{
+	width:1200px;
+	height:84px;
+	padding:80px 15px;
+}
+#header-bottom #container #row{
+	height:84px;
+	text-align: center;
+}
+#header-bottom #container #row #same{
+  height:28px;
+}
+#header-bottom #container #row h1{
+	color:#ffffff;
+	font-size:36px;
+	margin-bottom:15px;
+	position: relative;
+	left:150px;
+}
+#header-bottom #container #row ul{
+	width:220px;
+	height:26px;
+	text-align: center;
+	position:relative;
+	left:650px;
+}
+#header-bottom #container #row ul li{
+	list-style: none;
+	float:left;
+	color:#FFFFFF;
+	text-align: center;
+}
+#header-bottom #container #row ul #li4{
+	padding-right:10px;
+}
+#header-bottom #container #row {
+	text-align: center;
+}
