@@ -19,7 +19,7 @@
 			var s1=[];
 			btn.onclick=function(){
 				if(in1.value!=s[s.indexOf(in1.value)]){
-					alert("不存在此名字");
+					alert("查无此人");
 				}else{
 					if(s1.length>=s.length){
 						alert("都已签到");
@@ -33,9 +33,9 @@
 					}
 				}
 				if(s1.length!=s.length){
-					div2.innerText=("还有"+(s.length-s1.length)+"位未签到");
+					div2.innerText=((s.length-s1.length)+"未签到");
 				}else{
-					div2.innerText="已经全部签到完成";
+					div2.innerText="已全部签到完成";
 				}
 				div1.innerText="已签到："+s1;
 			}
