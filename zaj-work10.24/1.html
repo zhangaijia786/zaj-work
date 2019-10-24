@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<h4>名单：小花,小明,小红,小王,小张,小李,小朵,小陈</h4>
+		<input type="text" name="txt" id="in1" value="" />
+		<input type="button" name="btn" id="btn" value="签到"/>
+		<div id="div1"></div>
+		<div id="div2"></div>
+		<script type="text/javascript">
+			var in1=document.getElementById("in1");
+			var btn=document.getElementById("btn");
+			var div1=document.getElementById("div1");
+			var div2=document.getElementById("div2");
+			var s=['小花','小明','小红','小王','小张','小李','小朵','小陈'];
+			var s1=[];
+			btn.onclick=function(){
+				if(in1.value!=s[s.indexOf(in1.value)]){
+					alert("不存在此名字");
+				}else{
+					if(s1.length>=s.length){
+						alert("都已签到");
+					}else{
+						if(in1.value!=s1[s1.indexOf(in1.value)]){
+							s1.push(in1.value);
+							alert("签到成功");
+						}else{
+							alert("已签到");
+						}
+					}
+				}
+				if(s1.length!=s.length){
+					div2.innerText=("还有"+(s.length-s1.length)+"位未签到");
+				}else{
+					div2.innerText="已经全部签到完成";
+				}
+				div1.innerText="已签到："+s1;
+			}
+			
+		</script>
+	</body>
+</html>

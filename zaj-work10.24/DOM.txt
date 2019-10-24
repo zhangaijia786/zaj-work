@@ -1,0 +1,114 @@
+DOM
+1.获取元素
+  1.1找元素
+      getElementById('参数')
+             找到对应元素,否则返回null
+             
+  1.2标签名获取元素
+      getElementByTagName('元素名称')
+            返回伪数组或节点数列
+      var div=document.getElementsByTagName('div')
+      console.log(div[0])
+            也可以通过下标找到元素
+            
+  1.3类名获取元素
+      var b=document.getElementsByName('b')
+      console.log(b)
+      
+  1.4用name()属性值获取元素
+     getElementsByName('name元素')
+          返回伪数组
+          
+  1.5选择器获取元素
+      querySelector()只能找到列表的第一个元素
+      querySelectorAll()能找到全部
+
+2.获取和设置元素其他信息
+  2.1获取元素名
+           元素.tagName
+           
+  2.2获取元素节点里的内容
+           元素.innerHTML
+           还可以设置标签内的内容
+           
+  2.3获取元素节点中的文本
+           元素innerText
+           还可以设置元素中的文本
+           
+  2.4获取元素的类名
+           元素.className
+           返回值是字符串
+           
+  2.5获取元素样式
+     div[0].style.backgroundColor
+     js拿到和获取的是内联
+     JS优先级大于CSS优先级
+     
+  2.6获取元素属性
+     getAttribute('属性名')
+           返回值是字符串形式的属性值
+           
+  2.7设置元素属性
+      setAttribute('属性名','属性值')
+      
+  2.8删除元素属性
+      removeAttribute('属性名')
+      
+3.增加元素
+  3.1增加元素节点
+      document.creatElement('标签名')
+      
+  3.2创建文本节点
+      document.cteateTextNode('加油'）
+             父元素.appendChild()
+             
+  3.3CSS样式赋予
+     style.cssText='width:5px;height:5px;color:red;'
+     
+  3.4在某元素前插入新元素
+     insertBefore('需要插入的元素','在谁之前插入')
+     aooendChild()
+
+4.删除和替换元素
+  4.1元素替换
+      replaceChild('将要替换的新元素','被替换的旧元素')
+      
+  4.2元素删除
+      removeChild('要删除的元素')
+        
+5.查找节点
+  5.1节点属性
+      var div=document.getElementById('div')
+          console.log(div.nodeName)DIV
+          console.log(div.nodeValue)null
+          console.log(div.nodeType)1
+          
+  5.2获取所有子节点
+      console.log(div.childNodes)
+           
+  5.3获取第一个和最后一个子节点
+     console.log(div.firstChild)
+     console.log(div.lastChild)
+ 
+  5.4获取父节点
+     console.log(div.parentNode)
+           
+  5.5获取兄弟节点
+      console.log(div.previousSibling)
+      console.log(div.nextSibling)
+
+6.元素的宽高属性
+  6.1 offsetWidth和offsetHeigth
+      console.log(div.offsetWidth)
+      console.log(div.offsetHeigth)
+             包含内边距和边框
+             
+  6.2 clientWidth和clientHeigth
+      console.log(div.clientWidth)
+      console.log(div.clientHeigth)  
+             不包含边框 
+
+7.子元素和父元素的距离
+      console.log(div.offsetLeft)
+      console.log(div.offsetTop)
+             距离body左边界和上边界距离
