@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../jquery.min.js"></script>
+</head>
+<body>
+    <div class="all"></div>
+    <div class="seven">
+        <div id="1"></div>
+        <div id="2"></div>
+        <div id="3"></div>
+        <div id="4"></div>
+        <div id="5"></div>
+        <div id="6"></div>
+        <div id="7"></div>
+    </div>   
+    <script>
+        $(".all").css({"backgroundColor":"darkcyan","width":"150px","height":"150px","border-radius":"50%","float":"left","border":"2px solid white"});
+        $(".seven").css({"float":"left","margin-left":"40px","margin-top":"20px"});
+        $("#1").css({"backgroundColor":"brown","width":"100px","height":"100px","border-radius":"50%","float":"left","margin-right":"20px","border":"2px solid white","display":"none"});
+        $("#2").css({"backgroundColor":"chocolate","width":"100px","height":"100px","border-radius":"50%","float":"left","margin-right":"20px","border":"2px solid white","display":"none"});
+        $("#3").css({"backgroundColor":"yellow","width":"100px","height":"100px","border-radius":"50%","float":"left","margin-right":"20px","border":"2px solid white","display":"none"});
+        $("#4").css({"backgroundColor":"green","width":"100px","height":"100px","border-radius":"50%","float":"left","margin-right":"20px","border":"2px solid white","display":"none"});
+        $("#5").css({"backgroundColor":"aqua","width":"100px","height":"100px","border-radius":"50%","float":"left","margin-right":"20px","border":"2px solid white","display":"none"});
+        $("#6").css({"backgroundColor":"blue","width":"100px","height":"100px","border-radius":"50%","float":"left","margin-right":"20px","border":"2px solid white","display":"none"});
+        $("#7").css({"backgroundColor":"rebeccapurple","width":"100px","height":"100px","border-radius":"50%","float":"left","margin-right":"20px","border":"2px solid white","display":"none"});
+        
+        var a=true;
+        $(".all").click(function(){
+        	if(a){
+        		a=false;
+        		$(".seven>div").css("display","block");
+        	}else{
+        		a=true;
+        	    $(".seven>div").css("display","none");
+        	}
+        })
+        //点击谁，body跟着变颜色
+        $(".all").click(function(){
+        	$("body").css("backgroundColor","darkcyan");
+        })
+        $("#1").click(function(){
+        	$("body").css("backgroundColor","brown");
+        })
+        $("#2").click(function(){
+        	$("body").css("backgroundColor","chocolate");
+        })
+        $("#3").click(function(){
+        	$("body").css("backgroundColor","yellow");
+        })
+        $("#4").click(function(){
+        	$("body").css("backgroundColor","green");
+        })
+        $("#5").click(function(){
+        	$("body").css("backgroundColor","aqua");
+        })
+        $("#6").click(function(){
+        	$("body").css("backgroundColor","blue");
+        })
+        $("#7").click(function(){
+        	$("body").css("backgroundColor","rebeccapurple");
+        })
+    </script>
+</body>
+</html>
